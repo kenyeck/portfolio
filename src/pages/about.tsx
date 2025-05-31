@@ -18,17 +18,38 @@ export default function About() {
           />
           <div>
             <p className="text-lg mb-4">
-              I’m a full stack developer with 5+ years of experience building
-              scalable web applications. I specialize in React, Node.js, and
-              cloud technologies.
+              I&apos;m a full stack developer with 10+ years of experience building
+              scalable web applications. I specialize in React.js, .NET Core, and
+              Cloud technologies.
             </p>
             <h2 className="text-xl font-semibold mb-2">Skills</h2>
             <ul className="list-disc list-inside">
-              <li>JavaScript, TypeScript, React, Next.js</li>
-              <li>Node.js, Express, MongoDB</li>
-              <li>AWS, Docker, CI/CD</li>
+              <li>
+                <b>Frontend Development:</b> React.js, Next.js, TypeScript, HTML, CSS,
+                Redux, Chakra-UI, Material-UI
+              </li>
+              <li>
+                <b>Backend Development:</b> .NET Core, ASP.NET MVC, Node.js,
+                Express.js, C#, Authentication (OAuth, JWT)
+              </li>
+              <li>
+                <b>API & Data Integration:</b> REST APIs, Microsoft Graph API, OpenAI
+                API Integration, GraphQL
+              </li>
+              <li><b>Databases:</b> MSSQL, MongoDB, Firestore, Entity Framework</li>
+              <li><b>Cloud & Serverless:</b> Microsoft Azure, Google Cloud</li>
+              <li>
+                <b>DevOps & Tools:</b> Git, Netlify CMS, CI/CD (Azure DevOps), Postman
+              </li>
+              <li><b>Testing:</b> TDD, Jest, NUnit, React Testing Library, Wallaby</li>
+              <li>
+                <b>Project Management & Methodologies:</b> Agile Methodologies (Scrum,
+                Kanban), JIRA
+              </li>
             </ul>
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               href="/resume.pdf"
               className="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
             >
