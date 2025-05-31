@@ -7,8 +7,8 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-grow container mx-auto p-4 text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
-        <p className="text-lg mb-6">
+        <h1 className="text-4xl font-bold mb-6">Welcome to My Portfolio</h1>
+        <p className="text-lg mb-16">
           I&apos;m a full stack developer with 10+ years of experience. I specialize in React.js, .NET Core, and
               Cloud technologies. Check out my work!
         </p>
