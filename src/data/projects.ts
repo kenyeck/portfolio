@@ -20,7 +20,6 @@ export const projects = [
     screenshots: [
       '/images/logocfg1.png',
       '/images/logocfg2.png',
-      '/images/logocfg3.png',
     ],
   },
   {
