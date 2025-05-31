@@ -6,7 +6,7 @@ export default function ContactForm() {
       className="max-w-lg mx-auto p-4"
     >
       <div className="mb-4">
-        <label htmlFor="name" className="block text-gray-700">Name</label>
+        <label htmlFor="name" className="block text-gray-700 dark:text-white">Name</label>
         <input
           type="text"
           id="name"
@@ -16,7 +16,7 @@ export default function ContactForm() {
         />
       </div>
       <div className="mb-4">
-        <label htmlFor="email" className="block text-gray-700">Email</label>
+        <label htmlFor="email" className="block text-gray-700 dark:text-white">Email</label>
         <input
           type="email"
           id="email"
@@ -26,7 +26,7 @@ export default function ContactForm() {
         />
       </div>
       <div className="mb-4">
-        <label htmlFor="message" className="block text-gray-700">Message</label>
+        <label htmlFor="message" className="block text-gray-700 dark:text-white">Message</label>
         <textarea
           id="message"
           name="message"
