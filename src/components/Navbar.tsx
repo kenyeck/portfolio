@@ -4,7 +4,7 @@ import ThemeToggle from './ThemeToggle';
 export default function Navbar() {
   return (
     <nav className="bg-gray-800 text-white p-4 flex justify-between items-center">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center mr-4">
         <Link href="/" className="text-xl font-bold">
           Ken Yeck
         </Link>
