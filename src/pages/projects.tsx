@@ -8,7 +8,7 @@ export default function Projects() {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-grow container mx-auto p-4">
-        <h1 className="text-3xl font-bold mb-6">Project Sampling</h1>
+        <h1 className="text-3xl font-bold mb-6">Projects</h1>
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}

@@ -12,18 +12,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
-    title: `Logo Configuration`,
-    description:
-      'A unique modal dialog, allowing custom features to be configured in a visually appealing way. Allows images to be uploaded and custom colors to be set.',
-    technologies: ['React.js', 'Next.js', 'Chakra-UI'],
-    screenshots: [
-      { src: '/images/logocfg1.png', desc: 'Edit Configuration' },
-      { src: '/images/logocfg2.png', desc: 'Edit Configuration - Custom Colors', width: 200 },
-    ],
-  },
-  {
-    id: 3,
+    id: 2,
     title: `Custom 'Select' Component`,
     description:
       'A custom react component to replace react-select. Allows single/multi-select, custom rendering, filters, and infinity scrolling. Built front-end with React.js and Chakra-UI, back-end with C#/.NET Core (to support filtering/infinity scrolling).',
@@ -31,6 +20,17 @@ export const projects = [
     screenshots: [
       { src: '/images/worf1.png', desc: 'Test Page - All Variants' },
       { src: '/images/worf2.png', desc: 'Multi-select + Infinity scrolling', width: 200 },
+    ],
+  },
+  {
+    id: 3,
+    title: `Custom Modal / Color Picker`,
+    description:
+      'A unique modal dialog, allowing custom features to be configured in a visually appealing way. Allows images to be uploaded and custom colors to be set.',
+    technologies: ['React.js', 'Next.js', 'Chakra-UI'],
+    screenshots: [
+      { src: '/images/logocfg1.png', desc: 'Edit Configuration' },
+      { src: '/images/logocfg2.png', desc: 'Edit Configuration - Color Picker', width: 200 },
     ],
   },
   // Add more projects
