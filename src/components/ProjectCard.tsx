@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Technologies } from './Technologies';
 
 interface Screenshot {
   src: string;
@@ -25,26 +26,24 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         {project.description}
       </p>
       <div className="mb-4 flex items-center">
-        <h3 className="text-lg font-semibold">Technologies:</h3>
-        <div className="text-lg text-gray-600 dark:text-gray-300 h-fit ml-2">
-          {project.technologies.join(', ')}
-        </div>
-        {/* <ul className="list-disc list-inside">
-          {project.technologies.map((tech, index) => (
-            <li key={index}>{tech}</li>
-          ))}
-        </ul> */}
+        <Technologies name="Technologies" tech={project.technologies} />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {project.screenshots.map((x, index) => (
           <div className="flex flex-col items-center" key={index}>
             <Image
+              priority={index <= 2}
               key={index}
               src={x.src}
               alt={`${project.title} screenshot ${index + 1}`}
-              width={x.width ?? 500}
-              height={x.height ?? 300}
-              className="rounded-lg"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{
+                borderRadius: '3px',
+                width: x.width ?? 500,
+                height: x.height ?? 'auto',
+              }}
             />
             {x.desc && <p className="text-sm dark:text-gray-100">{x.desc}</p>}
           </div>
