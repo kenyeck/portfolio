@@ -2,6 +2,7 @@ export const projects = [
   {
     id: 1,
     title: 'OpenAI Chat',
+    shortDesc: 'Full-stack OpenAI Chat client with customizsble bots',
     description:
       'A full-stack OpenAI Chat client for employees. Includes an Admin screen manage individual Bots. Built front-end with Next.js, back-end with C#/.NET Core, and MS SQL for data storage.',
     technologies: ['React.js', 'Next.js', 'C#', '.NET Core', 'MS SQL'],
@@ -14,6 +15,7 @@ export const projects = [
   {
     id: 2,
     title: `Custom 'Select' Component`,
+    shortDesc: 'Custom react-select component with advanced features',
     description:
       'A custom react component to replace react-select. Allows single/multi-select, custom rendering, filters, and infinity scrolling. Built front-end with React.js and Chakra-UI, back-end with C#/.NET Core (to support filtering/infinity scrolling).',
     technologies: ['React.js', 'Next.js', 'Chakra-UI', 'C#', '.NET Core'],
@@ -25,6 +27,7 @@ export const projects = [
   {
     id: 3,
     title: `Custom Modal / Color Picker`,
+    shortDesc: 'Unique modal dialog with custom features',
     description:
       'A unique modal dialog, allowing custom features to be configured in a visually appealing way. Allows images to be uploaded and custom colors to be set.',
     technologies: ['React.js', 'Next.js', 'Chakra-UI'],

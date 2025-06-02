@@ -2,7 +2,6 @@
 
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
-//import { FaSun, FaMoon } from 'react-icons/fa';
 import { SunIcon, MoonIcon } from '@heroicons/react/24/solid';
 
 export default function ThemeToggle() {
@@ -18,7 +17,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="p-1 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 transition-colors duration-200 cursor-pointer"
+      className="p-1 rounded-full bg-gray-200 dark:bg-gray-600 text-gray-800 dark:text-gray-200 transition-colors duration-200 cursor-pointer"
       aria-label="Toggle theme"
     >
       {theme === 'dark' ? (
