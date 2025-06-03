@@ -20,7 +20,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="text-gray-800 bg-white dark:text-gray-100 dark:bg-black shadow-md rounded-lg p-6 mb-6">
+    <div className="shadow-md rounded-lg p-6 mb-6">
       <h2 className="text-2xl font-bold mb-6">{project.title}</h2>
       <p className="mb-6">
         {project.description}
