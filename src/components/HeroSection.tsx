@@ -12,19 +12,6 @@ export default function HeroSection() {
       transition={{ duration: 1 }}
       className="h-screen flex items-center justify-center relative overflow-hidden"
     >
-      {/* <div
-        className="absolute inset-0 
-      dark:bg-gradient-to-br dark:from-purple-900/20 dark:to-blue-900/20 
-      bg-gradient-to-br from-white dark:to-white"
-      />
-      <div className="absolute inset-0">
-        <div
-          className="absolute inset-0 
-        dark:bg-black
-        bg-[radial-gradient(circle_at_50%_50%,rgb(255,255,255),rgb(255,255,255))]"
-        />
-      </div> */}
-
       <div className="relative z-10 text-center">
         <motion.h1
           initial={{ y: 50 }}
@@ -49,7 +36,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="md:text-xl text-gray-800 dark:text-gray-300 mb-4 md:w-150 mt-10"
         >
-          I&apos;m a full stack developer with 10+ years of experience building
+          I&apos;m a software developer with 10+ years of experience building
           scalable web applications. I specialize in React.js, .NET Core, and
           Cloud technologies.
         </motion.p>
