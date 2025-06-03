@@ -8,7 +8,10 @@ export const projects = [
     technologies: ['React.js', 'Next.js', 'C#', '.NET Core', 'MS SQL'],
     screenshots: [
       { src: '/images/aichat1.png', desc: 'AI Chat Interface' },
-      { src: '/images/aichat2.png', desc: 'Admin page #1 - List of configured bots' },
+      {
+        src: '/images/aichat2.png',
+        desc: 'Admin page #1 - List of configured bots',
+      },
       { src: '/images/aichat3.png', desc: 'Admin page #2 - Edit Bot' },
     ],
   },
@@ -21,7 +24,11 @@ export const projects = [
     technologies: ['React.js', 'Next.js', 'Chakra-UI', 'C#', '.NET Core'],
     screenshots: [
       { src: '/images/worf1.png', desc: 'Test Page - All Variants' },
-      { src: '/images/worf2.png', desc: 'Multi-select + Infinity scrolling', width: 200 },
+      {
+        src: '/images/worf2.png',
+        desc: 'Multi-select + Infinity scrolling',
+        width: 200,
+      },
     ],
   },
   {
@@ -33,7 +40,11 @@ export const projects = [
     technologies: ['React.js', 'Next.js', 'Chakra-UI'],
     screenshots: [
       { src: '/images/logocfg1.png', desc: 'Edit Configuration' },
-      { src: '/images/logocfg2.png', desc: 'Edit Configuration - Color Picker', width: 200 },
+      {
+        src: '/images/logocfg2.png',
+        desc: 'Edit Configuration - Color Picker',
+        width: 200,
+      },
     ],
   },
   // Add more projects
