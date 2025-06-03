@@ -5,13 +5,13 @@ interface TechnologiesProps {
 
 export const Technologies = ({ name, tech }: TechnologiesProps) => {
   return (
-    <div className="mb-2">
+    <div className="mb-4">
       <b className="mr-3">{`${name}:`}</b>
       {tech.map((x) => {
         return (
           <span
             key={x}
-            className="inline-block border-solid border-1 bg-gray-100 dark:bg-gray-800 text-black-800 dark:text-black-200 rounded-full px-3 py-1 text-sm font-semibold mr-2"
+            className="text-gray-800 bg-gray-800/20 dark:text-gray-300 dark:bg-gray-300/20 border border-gray-800/30 dark:border-gray-300/30 mr-2 px-2 py-1 rounded-full"
           >
             {x}
           </span>

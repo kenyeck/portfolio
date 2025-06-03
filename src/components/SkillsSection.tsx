@@ -5,7 +5,7 @@ import { skills } from '@/data/skills';
 
 export default function SkillsSection() {
   return (
-    <section className="py-12 md:py-20 bg-gradient-to-b from-black to-purple-900/20 dark:bg-gradient-to-b dark:from-white/10 dark:to-white/10">
+    <section className="py-12 md:py-20">
       <div className="max-w-7xl mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -28,11 +28,14 @@ export default function SkillsSection() {
               whileHover={{ scale: 1.05 }}
               className="bg-white/5 rounded-xl p-6 text-center hover:bg-white/10 transition-colors"
             >
-              <h3 className="text-lg font-semibold pb-2 dark:text-gray-800">{skill.name}</h3>
-              <div className="mt-2 text-sm text-gray-300 flex flex-wrap justify-center gap-2 border-t pt-4 dark:text-gray-800">
+              <h3 className="text-lg font-semibold pb-2">
+                {skill.name}
+              </h3>
+              <div className="mt-2 text-sm flex flex-wrap justify-center gap-2 border-t pt-4">
                 {skill.tech.map((tech, techIndex) => (
                   <div key={techIndex} className="mb-1">
-                    <span className="inline-block bg-gray-300/20 text-white-400 px-2 py-1 rounded-full border border-gray-300/30 dark:text-black dark:bg-gray-800/20 dark:border-gray-800/30">
+                    <span className="inline-block dark:text-gray-300 dark:bg-gray-300/20  
+                    text-gray-800 bg-gray-800/20 border border-gray-800/30 dark:border-gray-300/30 px-2 py-1 rounded-full ">
                       {tech}
                     </span>
                   </div>

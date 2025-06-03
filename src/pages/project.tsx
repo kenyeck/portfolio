@@ -12,20 +12,18 @@ export default function Project() {
   return (
     <>
       {project && (
-        <div className="flex flex-col min-h-screen">
-          <main className="flex-grow container mx-auto p-4">
-            <ProjectCard key={project?.id} project={project!} />
-          </main>
+        <div className=" min-h-screen flex flex-col bg-white dark:bg-bkacl mt-16">
+          <ProjectCard key={project?.id} project={project!} />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="flex justify-center"
+            className="flex justify-center bg-white dark:bg-black"
           >
             <Link
               href="/#projects"
-              className="text-center text-white mt-4 mb-8 hover:no-underline"
+              className="text-center text-gray-800 bg-white dark:text-gray-300 dark:bg-black mt-4 mb-8 hover:no-underline"
             >
               <div className="flex flex-row gap-2 items-center justify-center">
                 <FaArrowLeft size={'1.25em'} />

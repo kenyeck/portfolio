@@ -8,7 +8,7 @@ import { projects } from '@/data/projects';
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="py-12 md:py-20 px-4 max-w-7xl mx-auto">
+    <section id="projects" className="py-12 md:py-20 px-4 max-w-7xl mx-auto w-full">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ export default function ProjectsSection() {
               </div>
               <Link
                 href={`./project?id=${project.id}`}
-                className="text-sm text-black px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors w-fit"
+                className="text-sm px-4 py-2 bg-white/10 hover:bg-white/50 rounded-full transition-colors w-fit"
               >
                 Details
               </Link>

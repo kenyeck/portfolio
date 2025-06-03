@@ -6,13 +6,12 @@ const fdev = [
   'CSS',
   'Redux',
   'Chakra-UI',
-  'Material-UI',
 ];
 const bdev = [
+  'C#',
   '.NET Core',
   'ASP.NET MVC',
   'Node.js',
-  'C#',
   'Authentication (OAuth, JWT)',
 ];
 const api = [

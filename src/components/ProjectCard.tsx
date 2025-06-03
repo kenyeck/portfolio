@@ -20,12 +20,12 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 mb-6">
-      <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
-      <p className="text-gray-700 dark:text-gray-100 mb-4">
+    <div className="text-gray-800 bg-white dark:text-gray-100 dark:bg-black shadow-md rounded-lg p-6 mb-6">
+      <h2 className="text-2xl font-bold mb-6">{project.title}</h2>
+      <p className="mb-6">
         {project.description}
       </p>
-      <div className="mb-4 flex items-center">
+      <div className="mb-4 flex items-center mb-6">
         <Technologies name="Technologies" tech={project.technologies} />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -45,7 +45,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 height: x.height ?? 'auto',
               }}
             />
-            {x.desc && <p className="text-sm dark:text-gray-100">{x.desc}</p>}
+            {x.desc && <p className="text-sm">{x.desc}</p>}
           </div>
         ))}
       </div>

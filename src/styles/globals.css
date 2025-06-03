@@ -3,14 +3,14 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: text-white;
+  --foreground: text-gray-800;
 }
 
 @media (prefers-color-scheme: custom-variant) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: bg-black;
+    --foreground: text-gray-300;
   }
 }
 
