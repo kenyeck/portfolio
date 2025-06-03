@@ -19,7 +19,7 @@ export default function ProjectsSection() {
         Recent Projects
       </motion.h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
         {projects.map((project) => (
           <motion.div
             key={project.id}
@@ -37,7 +37,7 @@ export default function ProjectsSection() {
               className="object-cover transition-transform group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-300" />
-            <div className="absolute inset-5 p-4 flex flex-col justify-between space-y">
+            <div className="absolute inset-5 p-4 flex flex-col justify-between space-y text-white">
               <div className="flex-col">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 <p className="mb-4 mh-50">{project.shortDesc}</p>

@@ -26,7 +26,7 @@ export default function SkillsSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
               whileHover={{ scale: 1.05 }}
-              className="bg-white/5 rounded-xl p-6 text-center hover:bg-white/10 transition-colors"
+              className="bg-gray-800/20 dark:bg-gray-800/50 hover:bg-gray-800/30 dark:hover:bg-gray-800 rounded-xl p-6 text-center transition-colors"
             >
               <h3 className="text-lg font-semibold pb-2">
                 {skill.name}
