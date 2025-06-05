@@ -6,7 +6,7 @@ import { FaArrowDown } from 'react-icons/fa';
 export default function HeroSection() {
   return (
     <motion.section
-      id="home"
+      id="Home"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -26,7 +26,7 @@ export default function HeroSection() {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg md:text-xl  mb-8 px-4"
+          className="text-lg md:text-xl mb-8 px-4"
         >
           Full Stack Developer & UI/UX Enthusiast
         </motion.p>

@@ -1,21 +1,43 @@
 @import 'tailwindcss';
 
-@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: text-white;
-  --foreground: text-gray-800;
+  --text-primary: #2D3748; /* Dark text for light backgrounds */
+  --text-secondary: #F7FAFC; /* Light text for dark backgrounds */
+  --primary-bg: #F7FAFC; /* Off-white for cards/sections */
+  --secondary-bg: #1F2A44; /* Dark navy for main background */
+  --accent: #2B6CB0; /* Teal for buttons and links */
+  --accent-hover: #1A4971; /* Darker teal for hover states */
+  --border: #E2E8F0; /* Light gray for borders */
+  --error: #F56565; /* Soft red for errors or alerts */
 }
 
-@media (prefers-color-scheme: custom-variant) {
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* line-height: 1.6; */
+}
+
+/* Ensure accessibility */
+@media (prefers-contrast: high) {
   :root {
-    --background: bg-black;
-    --foreground: text-gray-300;
+    --foreground: #FFFFFF;
+    --background: #000000;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: 'Inter', sans-serif;
+@custom-variant dark (&:where(.dark, .dark *));
+
+@media (prefers-color-scheme: custom-variant) {
+  :root {
+    --background: var(--secondary-bg);
+    --foreground: var(--text-secondary);
+  }
 }

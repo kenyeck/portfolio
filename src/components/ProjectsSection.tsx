@@ -9,7 +9,7 @@ import { projects } from '@/data/projects';
 export default function ProjectsSection() {
   return (
     <section
-      id="projects"
+      id="Projects"
       className="py-12 md:py-20 px-4 max-w-7xl mx-auto w-full"
     >
       <motion.h2
