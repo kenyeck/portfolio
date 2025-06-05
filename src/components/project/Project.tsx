@@ -1,7 +1,7 @@
 'use client';
 
-import ClientLayout from './ClientLayout';
-import ProjectCard from '@/components/ProjectCard';
+import ClientLayout from '../layout/ClientLayout';
+import ProjectCard from '@/components/project/ProjectCard';
 
 export default function Project() {
   return (

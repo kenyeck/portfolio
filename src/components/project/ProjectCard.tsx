@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Technologies } from './Technologies';
-import ImageModal from './ImageModal';
+import { Technologies } from '../Technologies';
+import ImageModal from '../ImageModal';
 import { useSearchParams } from 'next/navigation';
 import { projects } from '@/data/projects';
 
@@ -34,7 +34,8 @@ const defaultProject: Project = {
 export default function ProjectCard() {
   const [isOpen, setIsOpen] = useState(-1);
   const id = useSearchParams()?.get('id');
-  const project = projects.find((p) => p.id.toString() === id) ?? defaultProject;
+  const project =
+    projects.find((p) => p.id.toString() === id) ?? defaultProject;
 
   const openModal = (id: number) => {
     if (id !== -1) {
@@ -43,7 +44,8 @@ export default function ProjectCard() {
   };
 
   return (
-    <motion.div id="Projects"
+    <motion.div
+      id="Projects"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

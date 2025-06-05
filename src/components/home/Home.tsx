@@ -1,7 +1,7 @@
 'use client';
 
-import ClientLayout from './ClientLayout';
-import Portfolio from '@/components/Portfolio';
+import ClientLayout from '../layout/ClientLayout';
+import Portfolio from './Portfolio';
 
 export default function Home() {
   return (

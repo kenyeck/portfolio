@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ThemeToggle } from './ThemeToggle';
+import { ThemeToggle } from '../ThemeToggle';
 
 const menus = ['Home', 'Projects', 'Skills', 'Contact'];
 
