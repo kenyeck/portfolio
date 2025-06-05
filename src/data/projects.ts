@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 1,
-    title: 'OpenAI Chat',
+    title: 'Custom AI Chat',
     shortDesc: 'Full-stack OpenAI Chat client with customizsble bots',
     description:
       'A full-stack OpenAI Chat client for employees. Includes an Admin screen manage individual Bots. Built front-end with Next.js, back-end with C#/.NET Core, and MS SQL for data storage.',
