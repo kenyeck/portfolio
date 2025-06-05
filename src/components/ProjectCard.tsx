@@ -77,6 +77,7 @@ export default function ProjectCard() {
                     height: x?.height ?? 'auto',
                   }}
                   onClick={() => openModal(index)}
+                  unoptimized={x.src.endsWith('.gif')}
                 />
                 {x.desc && <p className="text-sm pt-2">{x.desc}</p>}
               </div>

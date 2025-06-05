@@ -8,10 +8,7 @@ import { projects } from '@/data/projects';
 
 export default function ProjectsSection() {
   return (
-    <section
-      id="Projects"
-      className="md:py-20 py-12 max-w-7xl mx-auto w-full"
-    >
+    <section id="Projects" className="md:py-20 py-12 max-w-7xl mx-auto w-full">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -37,8 +34,9 @@ export default function ProjectsSection() {
               src={project.screenshots[0].src}
               alt={project.title}
               fill
-              sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover transition-transform group-hover:scale-105"
+              unoptimized={project.screenshots[0].src.endsWith('.gif')}
             />
             <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-300" />
             <div className="absolute inset-5 p-4 flex flex-col justify-between space-y text-white">
