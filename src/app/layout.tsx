@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     'Software Developer,Clean Code,Minimal Design,Modern Development,Web Development,User Experience,Design Systems,JavaScript,TypeScript,React,Next.js,Performance,Accessibility,Minimalist Portfolio,Your Name',
   authors: [{ name: 'Ken Yeck', url: 'https://kenyeck.com' }],
   creator: 'Ken Yeck',
+  metadataBase: new URL('https://kenyeck.com'),
   openGraph: {
     title: 'Ken Yeck - Software Developer Portfolio',
     description:
