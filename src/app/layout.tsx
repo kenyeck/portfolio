@@ -54,7 +54,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className="antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="min-h-screen">
+          <div>
             <main>{children}</main>
           </div>
         </ThemeProvider>

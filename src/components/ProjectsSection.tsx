@@ -10,7 +10,7 @@ export default function ProjectsSection() {
   return (
     <section
       id="Projects"
-      className="py-12 md:py-20 px-4 max-w-7xl mx-auto w-full"
+      className="md:py-20 py-12 max-w-7xl mx-auto w-full"
     >
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
@@ -22,7 +22,7 @@ export default function ProjectsSection() {
         Recent Projects
       </motion.h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:px-10 md:px-20 sm:px-10 px-5">
         {projects.map((project) => (
           <motion.div
             key={project.id}
@@ -43,7 +43,7 @@ export default function ProjectsSection() {
             <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-300" />
             <div className="absolute inset-5 p-4 flex flex-col justify-between space-y text-white">
               <div className="flex-col">
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                <h3 className="xl:text-xl font-bold mb-2">{project.title}</h3>
                 <p className="mb-4 mh-50">{project.shortDesc}</p>
               </div>
               <Link

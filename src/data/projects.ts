@@ -1,4 +1,6 @@
-export const projects = [
+import { Project } from "@/components/ProjectCard";
+
+export const projects: Project[] = [
   {
     id: 1,
     title: 'Custom AI Chat',
@@ -17,17 +19,23 @@ export const projects = [
   },
   {
     id: 2,
-    title: `Custom 'Select' Component`,
+    title: `Custom Select`,
     shortDesc: 'Custom react-select component with advanced features',
     description:
-      'A custom react component to replace react-select. Allows single/multi-select, custom rendering, filters, and infinity scrolling. Built front-end with React.js and Chakra-UI, back-end with C#/.NET Core (to support filtering/infinity scrolling).',
+      'A custom react component to replace react-select. Allows single/multi-select, custom rendering, filters, and infinity scrolling with full mouse/keyboard support. Built front-end with React.js and Chakra-UI, back-end with C#/.NET Core (to support filtering/infinity scrolling).',
     technologies: ['React.js', 'Next.js', 'Chakra-UI', 'C#', '.NET Core'],
     screenshots: [
-      { src: '/images/worf1.png', desc: 'Test Page - All Variants' },
       {
-        src: '/images/worf2.png',
+        src: '/images/worfdynlm.gif',
         desc: 'Multi-select + Infinity scrolling',
-        width: 200,
+      },
+      {
+        src: '/images/worfsng.gif',
+        desc: 'Single-select',
+      },
+      {
+        src: '/images/worfsm.gif',
+        desc: 'Compact',
       },
     ],
   },

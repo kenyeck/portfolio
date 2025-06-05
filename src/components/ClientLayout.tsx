@@ -9,10 +9,10 @@ export default function ClientLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
+    <div className="flex flex-col h-screen justify-between">
       <Navbar />
-      <main>{children}</main>
+      {children}
       <Footer />
-    </>
+    </div>
   );
 }

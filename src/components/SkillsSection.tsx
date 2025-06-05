@@ -17,7 +17,7 @@ export default function SkillsSection() {
           Skills & Technologies
         </motion.h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
           {skills.map((skill, index) => (
             <motion.div
               key={skill.name}

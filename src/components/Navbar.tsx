@@ -29,21 +29,11 @@ export default function Navbar() {
     return () => observer.disconnect();
   }, []);
 
-  const toggleMenu = () => {
-    const menu = document.getElementById('mobile-menu');
-    if (menu) {
-      menu.classList.toggle('hidden');
-    }
-  };
-
   return (
     <>
-      <button className="md:hidden" onClick={toggleMenu}>
-        ☰
-      </button>
       <nav
         id="menu"
-        className="opacity-80 fixed top-0 z-100 flex w-full p-4 justify-end gap-4 transition-all duration-300
+        className="opacity-80 fixed top-0 z-100 flex w-full xs:p-4 p-1 justify-end xs:gap-4 transition-all duration-300
         bg-gray-300/5 dark:bg-black/20 shadow-md backdrop-blur-sm"
       >
         <ul className="space-x-2 flex">
