@@ -37,6 +37,7 @@ export default function ProjectsSection() {
               src={project.screenshots[0].src}
               alt={project.title}
               fill
+              sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
               className="object-cover transition-transform group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-300" />
