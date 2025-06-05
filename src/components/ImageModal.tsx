@@ -11,9 +11,8 @@ export default function ImageModal({
   src,
   alt,
   isOpen,
-  onClose
+  onClose,
 }: ImageModalProps) {
-
   const closeModal = () => {
     onClose();
   };

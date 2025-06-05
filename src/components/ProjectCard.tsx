@@ -41,7 +41,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <div key={index}>
             <div
               className="flex flex-col items-center cursor-pointer"
-              key={index} 
+              key={index}
             >
               <Image
                 priority={index <= 2}
@@ -58,15 +58,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 }}
                 onClick={() => openModal(index)}
               />
-            {x.desc && <p className="text-sm pt-2">{x.desc}</p>}
+              {x.desc && <p className="text-sm pt-2">{x.desc}</p>}
             </div>
-              <ImageModal
-                key={`modal-${index}`}
-                src={x.src}
-                alt={`${project.title} screenshot ${index + 1}`}
-                isOpen={isOpen === index}
-                onClose={() => setIsOpen(-1)}
-              />
+            <ImageModal
+              key={`modal-${index}`}
+              src={x.src}
+              alt={`${project.title} screenshot ${index + 1}`}
+              isOpen={isOpen === index}
+              onClose={() => setIsOpen(-1)}
+            />
           </div>
         ))}
       </div>

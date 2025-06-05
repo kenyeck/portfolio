@@ -28,9 +28,7 @@ export default function SkillsSection() {
               whileHover={{ scale: 1.05 }}
               className="bg-gray-800/20 dark:bg-gray-800/50 hover:bg-gray-800/30 dark:hover:bg-gray-800 rounded-xl p-6 text-center transition-colors"
             >
-              <h3 className="text-lg font-semibold pb-2">
-                {skill.name}
-              </h3>
+              <h3 className="text-lg font-semibold pb-2">{skill.name}</h3>
               <div className="mt-2 text-sm flex flex-wrap justify-center gap-2 border-t pt-4">
                 {skill.tech.map((tech, techIndex) => (
                   <div key={techIndex} className="mb-1">
