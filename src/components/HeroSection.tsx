@@ -26,7 +26,7 @@ export default function HeroSection() {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg md:text-xl text-gray-800 dark:text-gray-300 mb-8 px-4"
+          className="text-lg md:text-xl  mb-8 px-4"
         >
           Full Stack Developer & UI/UX Enthusiast
         </motion.p>
@@ -34,7 +34,7 @@ export default function HeroSection() {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="md:text-xl text-gray-800 dark:text-gray-300 mb-4 md:w-150 mt-10"
+          className="md:text-xl mb-4 md:w-150 mt-10"
         >
           I&apos;m a software developer with 10+ years of experience building
           scalable web applications. I specialize in React.js, .NET Core, and
@@ -46,7 +46,7 @@ export default function HeroSection() {
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.6 }}
-        className="absolute bottom-20 left-1/2 transform -translate-x-1/2 text-gray-800 dark:text-gray-300"
+        className="absolute bottom-20 left-1/2 transform -translate-x-1/2"
       >
         <div className="animate-bounce">
           <FaArrowDown size={'1.25em'} />

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import ThemeToggle from './ThemeToggle';
+import { ThemeToggle } from './ThemeToggle';
 
 export default function Navbar() {
   const toggleMenu = () => {
@@ -15,10 +15,9 @@ export default function Navbar() {
       </button>
       <nav
         id="menu"
-        className="opacity-80 fixed top-0 z-100 flex w-full p-4 flex justify-between items-center transition-all duration-300
+        className="opacity-80 fixed top-0 z-100 flex w-full p-4 justify-end gap-4 transition-all duration-300
         bg-gray-300/5 dark:bg-black/20 shadow-md backdrop-blur-sm"
       >
-        <div className="container mx-auto flex justify-between items-center mr-4">
           <div className="space-x-4 flex font-bold">
             <Link
               href="/#home"
@@ -39,7 +38,6 @@ export default function Navbar() {
               Contact
             </Link>
           </div>
-        </div>
         <ThemeToggle />
       </nav>
     </>

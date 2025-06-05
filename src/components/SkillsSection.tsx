@@ -34,8 +34,7 @@ export default function SkillsSection() {
               <div className="mt-2 text-sm flex flex-wrap justify-center gap-2 border-t pt-4">
                 {skill.tech.map((tech, techIndex) => (
                   <div key={techIndex} className="mb-1">
-                    <span className="inline-block dark:text-gray-300 dark:bg-gray-300/20  
-                    text-gray-800 bg-gray-800/20 border border-gray-800/30 dark:border-gray-300/30 px-2 py-1 rounded-full ">
+                    <span className="inline-block dark:text-gray-300 dark:bg-gray-300/20 bg-gray-800/20 border border-gray-800/30 dark:border-gray-300/30 px-2 py-1 rounded-full ">
                       {tech}
                     </span>
                   </div>

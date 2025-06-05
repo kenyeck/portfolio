@@ -1,18 +1,21 @@
+'use client';
+
+import ClientLayout from './ClientLayout';
 import ProjectCard from '@/components/ProjectCard';
 import { projects } from '@/data/projects';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { useSearchParams } from 'next/navigation';
 import { FaArrowLeft } from 'react-icons/fa';
 
 export default function Project() {
-  const router = useRouter();
-  const project = projects.find((p) => p.id.toString() === router.query.id);
+  const id = useSearchParams()?.get('id');
+  const project = projects.find((p) => p.id.toString() === id);
 
   return (
-    <>
+    <ClientLayout>
       {project && (
-        <div className=" min-h-screen flex flex-col mt-16">
+        <div className="flex flex-col mt-16">
           <ProjectCard key={project?.id} project={project!} />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -33,6 +36,6 @@ export default function Project() {
           </motion.div>
         </div>
       )}
-    </>
+    </ClientLayout>
   );
 }

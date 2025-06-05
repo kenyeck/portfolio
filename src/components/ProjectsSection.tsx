@@ -43,7 +43,7 @@ export default function ProjectsSection() {
                 <p className="mb-4 mh-50">{project.shortDesc}</p>
               </div>
               <Link
-                href={`./project?id=${project.id}`}
+                href={`/project?id=${project.id}`}
                 className="text-sm px-4 py-2 bg-white/10 hover:bg-white/50 rounded-full transition-colors w-fit"
               >
                 Details
