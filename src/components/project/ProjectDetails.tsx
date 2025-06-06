@@ -4,23 +4,8 @@ import { motion } from 'framer-motion';
 import { Technologies } from '../Technologies';
 import ImageModal from '../ImageModal';
 import { useSearchParams } from 'next/navigation';
+import { Project } from '../types/types';
 import { projects } from '@/data/projects';
-
-export interface Screenshot {
-  src: string;
-  desc?: string;
-  width?: number;
-  height?: number;
-}
-
-export interface Project {
-  id: number;
-  title: string;
-  description: string;
-  shortDesc: string;
-  technologies: string[];
-  screenshots: Screenshot[];
-}
 
 const defaultProject: Project = {
   id: -1,
@@ -31,7 +16,7 @@ const defaultProject: Project = {
   screenshots: [],
 };
 
-export default function ProjectCard() {
+export default function ProjectDetails() {
   const [isOpen, setIsOpen] = useState(-1);
   const id = useSearchParams()?.get('id');
   const project =
