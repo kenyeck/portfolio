@@ -36,8 +36,8 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="md:text-xl mb-4 md:w-150 mt-10"
         >
-          I&apos;m a software developer with 10+ years of experience building
-          scalable web applications. I specialize in React.js, .NET Core, and
+          I&apos;m a software developer with 5+ years of experience building
+          scalable web applications. I specialize in React.js, C#/.NET Core, Node.js/Express.js, and
           Cloud technologies.
         </motion.p>
       </div>
