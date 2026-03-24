@@ -28,7 +28,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg md:text-xl mb-8 px-4"
         >
-          Full Stack Developer & UI/UX Enthusiast
+          Full Stack Developer | UI/UX Focused | Problem Solver
         </motion.p>
         <motion.p
           initial={{ y: 50, opacity: 0 }}
@@ -36,9 +36,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="md:text-xl mb-4 md:w-150 mt-10"
         >
-          I&apos;m a software developer with 5+ years of experience building
-          scalable web applications. I specialize in React.js, C#/.NET Core, Node.js/Express.js, and
-          Cloud technologies.
+          I build scalable full-stack applications with React, Next.js, and TypeScript on the frontend, and C#/.NET on the backend. I specialize in modernizing legacy enterprise systems, designing high-performance APIs, and crafting intuitive UX that drives measurable business outcomes.
         </motion.p>
       </div>
 

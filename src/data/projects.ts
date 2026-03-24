@@ -4,15 +4,12 @@ export const projects: Project[] = [
   {
     id: 1,
     title: `Margin Configuration`,
-    shortDesc: 'Full-stack management of nation-wide branch margins',
+    shortDesc: 'Full-stack management of branch margins',
     description:
-      'A complex margin configuration tool, allowing management of branch margins across a nation-wide network. ' +
-      'Implemented on a single page, consisting of multiple tabs with each tab displaying a grid of data queried from the database (margins, branches, pricing, fees, etc.). ' +
-      'Included the ability to add/edit items with dynamic updates across related tabs. ' +
-      'Also included restrictions (e.g., pricing couldn’t be deleted if it was in use by a branch). ' +
-      'Each grid supported filtering, sorting and pagination, grabbing one page of data at a time filtered and sorted as needed. ' +
-      'All requirements obtained by working directly with the department heads. ' +
-      'UX/Visuals developed using Balsamiq Wireframe for rapid approval and efficient implementation. ',
+      'A comprehensive margin configuration tool enabling management of branch margins across a nationwide network. ' +
+      'Implemented on a single page with multiple tabs, each displaying a queryable grid of data (margins, branches, pricing, fees, etc.). ' +
+      'Features include add/edit functionality with dynamic cross-tab updates, business rule enforcement (e.g., restrictions on deleting in-use pricing), and per-grid filtering, sorting, and pagination. ' +
+      'UX designed collaboratively with department heads using Balsamiq wireframes for rapid approval and efficient implementation.',
     technologies: ['React.js', 'Next.js', 'Chakra-UI', 'C#', '.NET Core'],
     screenshots: [
       { src: '/images/mcfg1.png', desc: 'Margin Configuration' },
@@ -21,9 +18,10 @@ export const projects: Project[] = [
   {
     id: 2,
     title: 'Custom AI Chat',
-    shortDesc: 'Full-stack OpenAI Chat client with customizsble bots',
+    shortDesc: 'Full-stack OpenAI Chat client with customizable bots',
     description:
-      'A full-stack OpenAI Chat client for employees. Includes an Admin screen manage individual Bots. Built front-end with Next.js, back-end with C#/.NET Core, and MS SQL for data storage.',
+      'A full-stack OpenAI Chat client for employees. ' +
+      'Includes an Admin screen to create and customize AI bots with unique personalities and capabilities.',
     technologies: ['React.js', 'Next.js', 'C#', '.NET Core', 'MS SQL'],
     screenshots: [
       { src: '/images/aichat1.png', desc: 'AI Chat Interface' },
@@ -39,12 +37,12 @@ export const projects: Project[] = [
     title: `Custom Select`,
     shortDesc: 'Custom react-select component with advanced features',
     description:
-      'A custom react component to replace react-select. Allows single/multi-select, custom rendering, filters, and infinity scrolling with full mouse/keyboard support. Built front-end with React.js and Chakra-UI, back-end with C#/.NET Core (to support filtering/infinity scrolling).',
+      'A custom React component to replace react-select, optimized for handling large datasets. Supports single/multi-select, custom rendering, dynamic filtering, and infinite scrolling with full mouse/keyboard support.',
     technologies: ['React.js', 'Next.js', 'Chakra-UI', 'C#', '.NET Core'],
     screenshots: [
       {
         src: '/images/worfdynlm.gif',
-        desc: 'Multi-select + Infinity scrolling',
+        desc: 'Multi-select + Infinite scrolling',
       },
       {
         src: '/images/worfsng.gif',
@@ -61,7 +59,7 @@ export const projects: Project[] = [
     title: `Custom Modal / Color Picker`,
     shortDesc: 'Unique modal dialog with custom features',
     description:
-      'A unique modal dialog, allowing custom features to be configured in a visually appealing way. Allows images to be uploaded and custom colors to be set.',
+      'A specialized modal for logo and branding configuration, featuring an integrated image upload tool and color picker. Enables users to customize brand assets and define color palettes in a polished, intuitive interface.',
     technologies: ['React.js', 'Next.js', 'Chakra-UI'],
     screenshots: [
       { src: '/images/logocfg1.png', desc: 'Edit Configuration' },
