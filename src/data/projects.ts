@@ -10,7 +10,7 @@ export const projects: Project[] = [
       'Implemented on a single page with multiple tabs, each displaying a queryable grid of data (margins, branches, pricing, fees, etc.). ' +
       'Features include add/edit functionality with dynamic cross-tab updates, business rule enforcement (e.g., restrictions on deleting in-use pricing), and per-grid filtering, sorting, and pagination. ' +
       'UX designed collaboratively with department heads using Balsamiq wireframes for rapid approval and efficient implementation.',
-    technologies: ['React.js', 'Next.js', 'Chakra-UI', 'C#', '.NET Core'],
+    technologies: ['React.js', 'Next.js', 'Chakra UI', 'C#', '.NET Core'],
     screenshots: [
       { src: '/images/mcfg1.png', desc: 'Margin Configuration' },
     ],
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     shortDesc: 'Custom react-select component with advanced features',
     description:
       'A custom React component to replace react-select, optimized for handling large datasets. Supports single/multi-select, custom rendering, dynamic filtering, and infinite scrolling with full mouse/keyboard support.',
-    technologies: ['React.js', 'Next.js', 'Chakra-UI', 'C#', '.NET Core'],
+    technologies: ['React.js', 'Next.js', 'Chakra UI', 'C#', '.NET Core'],
     screenshots: [
       {
         src: '/images/worfdynlm.gif',
@@ -60,7 +60,7 @@ export const projects: Project[] = [
     shortDesc: 'Unique modal dialog with custom features',
     description:
       'A specialized modal for logo and branding configuration, featuring an integrated image upload tool and color picker. Enables users to customize brand assets and define color palettes in a polished, intuitive interface.',
-    technologies: ['React.js', 'Next.js', 'Chakra-UI'],
+    technologies: ['React.js', 'Next.js', 'Chakra UI'],
     screenshots: [
       { src: '/images/logocfg1.png', desc: 'Edit Configuration' },
       {

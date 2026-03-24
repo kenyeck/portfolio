@@ -6,8 +6,8 @@ const fdev = [
   'TypeScript',
   'HTML5',
   'CSS3',
-  'Chakra-UI',
-  'Material-UI',
+  'Chakra UI',
+  'Material UI',
 ];
 const bdev = [
   'C#',
