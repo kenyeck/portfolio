@@ -17,7 +17,7 @@ export default function ProjectsSection() {
         Recent Projects
       </motion.h2>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:px-10 md:px-20 sm:px-10 px-5">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:px-10 md:px-20 sm:px-10 px-5">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}

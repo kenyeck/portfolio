@@ -3,6 +3,23 @@ import { Project } from "@/components/types/types";
 export const projects: Project[] = [
   {
     id: 1,
+    title: `Margin Configuration`,
+    shortDesc: 'Full-stack management of nation-wide branch margins',
+    description:
+      'A complex margin configuration tool, allowing management of branch margins across a nation-wide network. ' +
+      'Implemented on a single page, consisting of multiple tabs with each tab displaying a grid of data queried from the database (margins, branches, pricing, fees, etc.). ' +
+      'Included the ability to add/edit items with dynamic updates across related tabs. ' +
+      'Also included restrictions (e.g., pricing couldn’t be deleted if it was in use by a branch). ' +
+      'Each grid supported filtering, sorting and pagination, grabbing one page of data at a time filtered and sorted as needed. ' +
+      'All requirements obtained by working directly with the department heads. ' +
+      'UX/Visuals developed using Balsamiq Wireframe for rapid approval and efficient implementation. ',
+    technologies: ['React.js', 'Next.js', 'Chakra-UI', 'C#', '.NET Core'],
+    screenshots: [
+      { src: '/images/mcfg1.png', desc: 'Margin Configuration' },
+    ],
+  },
+  {
+    id: 2,
     title: 'Custom AI Chat',
     shortDesc: 'Full-stack OpenAI Chat client with customizsble bots',
     description:
@@ -18,7 +35,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: `Custom Select`,
     shortDesc: 'Custom react-select component with advanced features',
     description:
@@ -40,7 +57,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: `Custom Modal / Color Picker`,
     shortDesc: 'Unique modal dialog with custom features',
     description:
